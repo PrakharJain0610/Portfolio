@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visitor Analytics — Prakhar Jain</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="admin-stats.html">
+
+  <nav class="nav">
+    <div class="container">
+      <a class="nav-brand" href="index.html">Prakhar<span>.</span>Jain</a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="index.html">Home</a></li>
+        <li><a href="about.html" data-page="about.html">About</a></li>
+        <li><a href="projects.html" data-page="projects.html">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero section-tight">
+    <div class="container">
+      <p class="eyebrow">Demo</p>
+      <h1>Visitor Analytics</h1>
+      <p class="lede">
+        Live read-out of the user-behaviour data collected by <code>tracker.js</code> and stored in MySQL.
+        This page is unauthenticated for demo purposes — see README.md for how to protect it.
+      </p>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="kpi-row" id="totals-row">
+        <div class="kpi"><div class="kpi-value" id="kpi-visitors">–</div><div class="kpi-label">Unique visitors</div></div>
+        <div class="kpi"><div class="kpi-value" id="kpi-pageviews">–</div><div class="kpi-label">Pageviews</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <h2>Most Viewed Pages</h2>
+      <table id="table-top-pages"><thead><tr><th>Page</th><th>Views</th></tr></thead><tbody></tbody></table>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <h2>Time Spent Per Page</h2>
+      <p class="lede">Which page holds attention the longest.</p>
+      <table id="table-time-page"><thead><tr><th>Page</th><th>Total time</th><th>Avg time / visit</th></tr></thead><tbody></tbody></table>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <h2>Time Spent Per Section</h2>
+      <p class="lede">Which on-page section people actually scroll to and linger on.</p>
+      <table id="table-time-section"><thead><tr><th>Section</th><th>Total time</th></tr></thead><tbody></tbody></table>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <h2>Most Viewed Projects</h2>
+      <table id="table-top-projects"><thead><tr><th>Project</th><th>Clicks</th><th>Total time viewed</th></tr></thead><tbody></tbody></table>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <h2>Recent Events</h2>
+      <table id="table-recent"><thead><tr><th>Type</th><th>Page</th><th>Section / Project</th><th>Duration</th><th>When</th></tr></thead><tbody></tbody></table>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap;">
+      <span>© 2026 Prakhar Jain.</span>
+      <a href="index.html">← Back to portfolio</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
