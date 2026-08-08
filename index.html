@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prakhar Jain — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="index.html">
+
+  <nav class="nav">
+    <div class="container">
+      <a class="nav-brand" href="index.html">Prakhar<span>.</span>Jain</a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="index.html">Home</a></li>
+        <li><a href="about.html" data-page="about.html">About</a></li>
+        <li><a href="projects.html" data-page="projects.html">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" data-section="hero">
+    <div class="container">
+      <p class="eyebrow">Analyst</p>
+      <h1>I turn raw data into dashboards<br />and decisions people trust.</h1>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="projects.html">View Projects</a>
+        <!-- <a class="btn btn-outline" href="mailto:Prakhar.jain1@dell.com">Get in Touch</a> -->
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <section data-section="skills">
+    <div class="container">
+      <h2>Toolbox</h2>
+      <p class="lede">Tools and skills I use day to day.</p>
+      <div class="skill-list">
+        <span class="skill-pill">HTML</span>
+        <span class="skill-pill">CSS</span>
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">Power BI</span>
+        <span class="skill-pill">SQL</span>
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">Microsoft Azure (AZ-900)</span>
+        <span class="skill-pill">Information Storage &amp; Management (ISM)</span>
+        <span class="skill-pill">Root Cause Analysis</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <section data-section="featured-projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <p class="lede">A mix of Power BI dashboards and SQL analysis — all from my GitHub.</p>
+      <div class="grid">
+
+        <article class="card">
+          <!-- <div class="card-thumb">₿</div> -->
+          <!-- <span class="tag">Power BI</span> -->
+          <h3>Bitcoin Performance Analysis</h3>
+          <p class="lede">Historical Bitcoin trends and performance metrics, analyzed in SQL/Excel and visualized in Power BI.</p>
+          <a class="card-link" data-project-click="bitcoin-analysis" href="project-bitcoin-analysis.html">View project →</a>
+        </article>
+
+        <article class="card">
+          <!-- <div class="card-thumb">🏏</div> -->
+          <!-- <span class="tag">Power BI</span> -->
+          <h3>Cricket World Cup Analysis</h3>
+          <p class="lede">Player and team performance dashboard, built from raw stats cleaned with Python.</p>
+          <a class="card-link" data-project-click="cricket-analysis" href="project-cricket-analysis.html">View project →</a>
+        </article>
+
+        <article class="card">
+          <!-- <div class="card-thumb">🗄️</div> -->
+          <!-- <span class="tag tag-good">SQL</span> -->
+          <h3>SQL Data Cleaning & Analysis</h3>
+          <p class="lede">Cleaning messy housing data and analyzing global COVID vaccination trends, in pure SQL.</p>
+          <a class="card-link" data-project-click="sql-analysis" href="project-sql-analysis.html">View project →</a>
+        </article>
+
+      </div>
+      <p style="margin-top:24px;"><a class="btn btn-outline" href="projects.html">See all projects</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:12px;">
+      <span>© 2026 Prakhar Jain.</span>
+      <div style="display:flex; gap:16px; flex-wrap:wrap;">
+        <a href="https://www.linkedin.com/in/prakhar-jain-82aa28250/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/PrakharJain0610" target="_blank" rel="noopener">GitHub</a>
+        <a href="admin-stats.html">Analytics (demo)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/tracker.js"></script>
+</body>
+</html>
